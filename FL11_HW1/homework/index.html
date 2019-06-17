@@ -11,7 +11,7 @@
       <div id="main">
         <div id="container">
           <div id="content" role="main">
-            <header id="home">
+            <header>
               <img src="logo.png" alt="head logo epam" />
               <h1>HTML Elements</h1>
               <hr />
@@ -26,38 +26,40 @@
             </header>
             <hr />
 
-            <p>
-              Lorem ipsum dolor sit amet, <a href="#">test link</a> adipiscing
-              elit. <strong>This is strong</strong>. Nullam dignissim convallis
-              est. Quisque aliquam. <em>This is emphasized</em>. Donec faucibus.
-              Nunc iaculis suscipit dui. 5 <sup>3</sup> = 125. Water is
-              H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet
-              at, tincidunt nec, gravida vehicula, nisl.
-              <cite>The New York Times</cite> (That's a citation).
-              <u>Underline</u>. Maecenas ornare tortor. Donec sed tellus eget
-              sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem,
-              consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet
-              augue quis tellus.
-            </p>
-            <p>
-              Watch out for the abbreviations!
-              <abbr title="Hyper Text Markup Language">HTML</abbr> and
-              <abbr title="Cascading Style Sheets">CSS</abbr> are our tools.
-              Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae,
-              feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent
-              mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu
-              volutpat enim diam eget metus. To copy a file type
-              <kbd>COPY</kbd> filename.
-              <del>
-                Dinner`s at 5:00.
-              </del>
-              <ins>
-                Let's make that 7.
-              </ins>
-              This <s>text</s> has been struck.
-            </p>
-
+            <div id="home">
+              <p>
+                Lorem ipsum dolor sit amet, <a href="#">test link</a> adipiscing
+                elit. <strong>This is strong</strong>. Nullam dignissim
+                convallis est. Quisque aliquam. <em>This is emphasized</em>.
+                Donec faucibus. Nunc iaculis suscipit dui. 5 <sup>3</sup> = 125.
+                Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi,
+                imperdiet at, tincidunt nec, gravida vehicula, nisl.
+                <cite>The New York Times</cite> (That's a citation).
+                <u>Underline</u>. Maecenas ornare tortor. Donec sed tellus eget
+                sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem,
+                consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet
+                augue quis tellus.
+              </p>
+              <p>
+                Watch out for the abbreviations!
+                <abbr title="Hyper Text Markup Language">HTML</abbr> and
+                <abbr title="Cascading Style Sheets">CSS</abbr> are our tools.
+                Mauris a ante. Suspendisse quam sem, consequat at, commodo
+                vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+                Praesent mattis, massa quis luctus fermentum, turpis mi volutpat
+                justo, eu volutpat enim diam eget metus. To copy a file type
+                <kbd>COPY</kbd> <i>filename</i>.
+                <del>
+                  Dinner`s at 5:00.
+                </del>
+                <ins>
+                  Let's make that 7.
+                </ins>
+                This <s>text</s> has been struck.
+              </p>
+            </div>
             <hr />
+
             <section id="headers">
               <p>
                 Pay attention to h1 tag inside section element. Font-size for h1
@@ -71,6 +73,7 @@
               <h6>Header 6</h6>
             </section>
             <hr />
+
             <section id="text">
               <h2>Text formats</h2>
 
@@ -145,10 +148,10 @@ justify-content: center;
                 <option value="CSS">CSS</option>
                 <option value="JS">JS</option>
               </select>
-
               <hr />
             </section>
             <hr />
+
             <section id="table">
               <h2>Table</h2>
               <table>
@@ -180,6 +183,7 @@ justify-content: center;
                 </tr>
               </table>
             </section>
+
             <section id="blockquotes">
               <h2>Blockquotes</h2>
               <p>
@@ -196,10 +200,14 @@ justify-content: center;
               </blockquote>
               <hr />
               <form action="#">
-                <fieldset>First name: <input type="text" /></fieldset>
-                <fieldset>Second name: <input type="text" /></fieldset>
-                <fieldset>Email: <input type="email" /></fieldset>
-                <fieldset>Password: <input type="password" /></fieldset>
+                <label>First name: <input type="text"/></label>
+                <br />
+                <label>Second name: <input type="text"/></label>
+                <br />
+                <label>Email: <input type="email"/></label>
+                <br />
+                <label>Password: <input type="password"/></label>
+                <br />
                 <textarea
                   name="textarea"
                   id="textarea"
@@ -210,6 +218,7 @@ justify-content: center;
                 <input type="submit" value="Submit" />
               </form>
             </section>
+
             <footer>
               &copy; Copyright Epam Systems
             </footer>
