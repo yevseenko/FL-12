@@ -128,4 +128,43 @@
     border-width: 25px 25px 0 0;
     border-color: #76cdd7 transparent transparent transparent;
   }
+
+  section > div > h2 {
+    color: skyblue;
+    text-align: center;
+  }
+
+  section > div > ol > li {
+    list-style: lower-roman;
+  }
+
+  section > div > ol > li > a:visited {
+    color: #ffb347;
+  }
+
+  section > div > ol > li > a:hover {
+    color: #ffb347;
+    font-weight: 900;
+    text-decoration: none;
+  }
+
+  section > div > ol > li > a:hover:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 1px 3px 0 0;
+    border-color: #ffb347 #ffb347 transparent transparent;
+    margin: 3px;
+  }
+
+  .text::after {
+    content: "New";
+    width: 100%;
+    color: red;
+    font-size: 11px;
+    position: relative;
+    top: -8px;
+    font-weight: bold;
+  }
 }
