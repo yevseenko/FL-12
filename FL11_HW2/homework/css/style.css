@@ -117,3 +117,13 @@
   text-shadow: 0px 10px 2px #76CDD7;
   letter-spacing: 1.5mm;
 }
+
+section::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 25px 0 0;
+  border-color: #76CDD7 transparent transparent transparent;
+
+}
