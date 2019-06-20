@@ -167,4 +167,17 @@
     top: -8px;
     font-weight: bold;
   }
+
+  .box-work {
+    margin: 6px;
+    width: 32%;
+  }
+
+  .box-work > div > p {
+    font-style: italic;
+  }
+
+  .box-work > div > p::first-letter {
+    font-size: 1.4em;
+  }
 }
