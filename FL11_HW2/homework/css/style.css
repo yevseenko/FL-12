@@ -179,6 +179,7 @@
 
   .box-work > div > p::first-letter {
     font-size: 1.4em;
+    font-weight: 370;
   }
 
   #contact > h2 {
