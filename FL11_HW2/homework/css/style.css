@@ -211,7 +211,29 @@
     letter-spacing: 1mm;
   }
 
+  #contact_email {
+    background: right/7% no-repeat url(../img/email-icon.png);
+  
+  }
+
+  #contact_message {
+    resize: none;
+  }
+
   #contact > form > button {
-    
+    float: right;
+    color:lightskyblue;
+    font-weight: 400;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 1px;
+    width: 180px;
+    height: 60px;
+    border: 2px solid lightskyblue;
+  }
+
+  #contact > form > button:hover {
+    color: white;
+    background-color: skyblue;
   }
 }
