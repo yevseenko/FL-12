@@ -140,6 +140,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 0;
+  padding-bottom: 80px;
 }
 
 .featured h2 {
@@ -205,7 +206,7 @@
 }
 
 .tiles {
-  margin-top: 100px;
+  margin-top: 40px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -265,6 +266,11 @@ div > p.likes {
   color: white;
   font-weight: 900;
   font-size: 1em;
+}
+
+.explore:hover{
+  background-color: #fff;
+  color: #097774;
 }
 
 .load {
@@ -333,6 +339,55 @@ div > p.likes {
   justify-content: space-between;
 }
 
+.header,
+.triangles,
+.featured,
+.prefooter {
+  background-color: #f0f0f0;
+}
+
+.prefooter {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.prefooter p {
+  padding: 20px;
+}
+
+.form {
+  margin-left: auto;
+  padding-bottom: 40px;
+}
+
+.form input {
+  height: 35px;
+  margin-left: 10px;
+}
+
+.form label {
+  font-size: 1.2em;
+}
+
+input[type="submit"] {
+  background-color: #097774;
+  color: white;
+  padding: 5px;
+  font-weight: 900;
+  margin-right: 40px;
+  border-color: #097774;
+}
+
+input[type="submit"]:hover {
+  background-color: #fff;
+  color: #097774;
+}
+
+.footnav a {
+  color: #000;
+}
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -392,9 +447,5 @@ div > p.likes {
   .tile .likes {
     margin-right: 20px;
     margin-top: 20px;
-  }
-
-  body > div.container > div.subscribe h3 {
-    margin-top: 50px;
   }
 }
