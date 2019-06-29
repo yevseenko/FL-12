@@ -16,7 +16,7 @@
 }
 
 .header {
-  background: url(../img/sample2.jpg) center no-repeat;
+  background-image: url(../img/sample2.jpg);
   width: 100%;
   height: 550px;
   background-size: cover;
@@ -182,22 +182,18 @@
   padding: 5px;
 }
 
-.date {
-  background-color: rgba(44, 44, 44, 0.4);
-  width: 190px;
-}
-
 #firstImgFeatured {
-  background: url(../img/sample-1.jpg) no-repeat;
+  background-image: url(../img/sample-1.jpg);
 }
 
 #secondImgFeatured {
-  background: url(../img/sample-2.jpg) no-repeat;
+  background-image: url(../img/sample-2.jpg);
 }
 
 #firstImgFeatured,
 #secondImgFeatured {
   background-size: cover;
+  padding: 0;
 }
 
 .description p {
@@ -225,19 +221,19 @@ div .tile {
 }
 
 #tile1 {
-  background: url(../img/news-list-1.jpg);
+  background-image: url(../img/news-list-1.jpg);
 }
 
 #tile2 {
-  background: url(../img/news-list-2.jpg);
+  background-image: url(../img/news-list-2.jpg);
 }
 
 #tile3 {
-  background: url(../img/news-list-3.jpg);
+  background-image: url(../img/news-list-3.jpg);
 }
 
 #tile4 {
-  background: url(../img/news-list-4.jpg);
+  background-image: url(../img/news-list-4.jpg);
 }
 
 #tile1,
@@ -247,20 +243,17 @@ div .tile {
   background-size: cover;
 }
 
-.tile .likes {
+div > p.likes {
   margin-right: 15px;
   margin-top: 15px;
 }
 
-.tile .date {
+.date {
   margin-left: 15px;
   margin-bottom: 15px;
   font-weight: 900;
-}
-
-.tiles p.date {
-  background-color: rgba(44, 44, 44, 0.4);
-  width: 140px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .explore {
@@ -323,6 +316,23 @@ div .tile {
   font-size: 0.8em;
 }
 
+.gradient {
+  background: radial-gradient(transparent, rgba(0, 0, 0, 0.5));
+  width: 100%;
+  height: 100%;
+}
+
+.tiles .gradient,
+#secondImgFeatured .gradient,
+#firstImgFeatured .gradient {
+  background: radial-gradient(transparent, rgba(0, 0, 0, 0.5));
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -367,11 +377,6 @@ div .tile {
     height: 300px;
   }
 
-  .date {
-    background-color: rgba(44, 44, 44, 0.4);
-    width: 190px;
-  }
-
   .description p {
     font-size: 0.8em;
     margin: 25px;
@@ -387,11 +392,6 @@ div .tile {
   .tile .likes {
     margin-right: 20px;
     margin-top: 20px;
-  }
-
-  .tile .date {
-    margin-left: 20px;
-    margin-bottom: 20px;
   }
 
   body > div.container > div.subscribe h3 {
