@@ -323,7 +323,6 @@ div .tile {
   font-size: 0.8em;
 }
 
-
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -398,5 +397,4 @@ div .tile {
   body > div.container > div.subscribe h3 {
     margin-top: 50px;
   }
-
 }
