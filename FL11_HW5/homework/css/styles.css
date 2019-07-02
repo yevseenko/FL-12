@@ -1,15 +1,3 @@
-/*
- * Feel free to change name of colors if you need it
- * Feel free to add new colors if you need it
- */
-:root {
-  --bg-color--dark: #0b192f;
-  --bg-color--header: #162b4d;
-  --link: #fff;
-  --link--hover: #b8b8b8;
-  --bg-footer-color: #162b4d;
-}
-
 body {
   font-family: roboto;
 }
@@ -29,7 +17,7 @@ body {
   background: #2d95bb;
 }
 
-/* Your styles go here */
+
 
 * {
   margin: 0;
@@ -39,7 +27,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: var(--bg-color--dark);
+  background-color: #0b192f;
   grid-template-areas:
     "header"
     "post1"
@@ -79,7 +67,7 @@ body {
 h1,
 h2,
 p {
-  color: var(--link);
+  color: #fff;
   font-weight: 200;
 }
 
@@ -102,7 +90,7 @@ h1 span {
 
 .post a:hover,
 .news a:hover {
-  color: var(--link--hover);
+  color: #b8b8b8;
 }
 
 .news {
@@ -130,7 +118,7 @@ h1 span {
 }
 
 .header {
-  background-color: var(--bg-color--header);
+  background-color: #162b4d;
   width: 95%;
   justify-self: center;
   display: grid;
@@ -150,7 +138,7 @@ h1 {
 .hamburger div {
   width: 20px;
   height: 2px;
-  background-color: var(--link);
+  background-color: #fff;
   margin: 6px 0;
 }
 
@@ -180,7 +168,7 @@ nav li a {
   text-decoration: none;
   cursor: pointer;
   font-size: 2em;
-  color: var(--link--hover);
+  color: #b8b8b8;
 }
 
 #check:checked ~ nav {
@@ -221,7 +209,7 @@ p .date {
 }
 
 .footer {
-  background-color: var(--bg-footer-color);
+  background-color: #162b4d;
   padding: 15px;
   opacity: 0.5;
   font-size: 0.8em;
@@ -232,7 +220,7 @@ p .date {
   .container {
     grid-template-columns: 3fr 2fr;
     grid-template-rows: minmax(200px, auto);
-    background-color: var(--bg-color--dark);
+    background-color: #0b192f;
     grid-template-areas:
       "header header"
       "post1 news"
