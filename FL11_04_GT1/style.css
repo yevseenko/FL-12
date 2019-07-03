@@ -21,7 +21,7 @@
 }
 
 .loader {
-  border: 1px solid saddlebrown;
+  /* border: 1px solid saddlebrown; */
 }
 
 .spin {
@@ -185,6 +185,44 @@
 }
 
 @keyframes sk-double-bounce {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+.sk-chasing-dots {
+  width: 4em;
+  height: 4em;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  animation: sk-chasing-dots-rotate 2s infinite linear;
+}
+.sk-chasing-dots .sk-child {
+  width: 2em;
+  height: 2em;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #fafafa;
+  border-radius: 100%;
+  animation: sk-chasing-dots-bounce 2s infinite ease-in-out;
+}
+.sk-chasing-dots .sk-dot-2 {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes sk-chasing-dots-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes sk-chasing-dots-bounce {
   0%, 100% {
     transform: scale(0);
   }
