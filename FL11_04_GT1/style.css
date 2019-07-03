@@ -3,7 +3,10 @@
   padding: 0;
   background-color: #FC9824;
   color: #fafafa;
+}
 
+body {
+  font-family: relay;
 }
 
 .container {
@@ -415,64 +418,44 @@
   }
 }
 
-@keyframes lds-ball {
-  0%, 100% {
-    animation-timing-function: cubic-bezier(0.45, 0, 0.9, 0.55);
-  }
-  0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  50% {
-    -webkit-transform: translate(0, 120px);
-    transform: translate(0, 120px);
-    animation-timing-function: cubic-bezier(0, 0.45, 0.55, 0.9);
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-}
-@-webkit-keyframes lds-ball {
-  0%, 100% {
-    animation-timing-function: cubic-bezier(0.45, 0, 0.9, 0.55);
-  }
-  0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  50% {
-    -webkit-transform: translate(0, 120px);
-    transform: translate(0, 120px);
-    animation-timing-function: cubic-bezier(0, 0.45, 0.55, 0.9);
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-}
-.lds-ball {
-  position: relative;
-}
-.lds-ball div {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #fafafa;
-  left: 80px;
-  top: 20px;
-  -webkit-animation: lds-ball 1s linear infinite;
-  animation: lds-ball 1s linear infinite;
-}
-.lds-ball {
-  width: 55px !important;
-  height: 55px !important;
-  -webkit-transform: translate(-27.5px, -27.5px) scale(0.275) translate(27.5px, 27.5px);
-  transform: translate(-27.5px, -27.5px) scale(0.275) translate(27.5px, 27.5px);
+
+.text {
+  font-size: 20px;
+  display: inline-block;
+  color: #fff;
+  margin-left: 5px;
 }
 
-.lds-css {
-  display: flex;
-  align-items: flex-end;
+.bounce-ball {
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  width: 15px;
+}
+.bounce-ball:before {
+  display: block;
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  animation: bounce 0.5s alternate infinite ease;
+}
+@keyframes bounce {
+  0% {
+    top: 30px;
+    height: 5px;
+    border-radius: 60px 60px 20px 20px;
+    transform: scaleX(2);
+  }
+  35% {
+    height: 15px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+  100% {
+    top: 0;
+  }
 }
