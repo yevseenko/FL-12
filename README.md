@@ -14,6 +14,8 @@ The ropository is a part of registration in EPAM University Program FE Ukraine a
 
 Homework #6
 
-* [Task #1: is midpoint?](https://aymkin.github.io/FL-11/FL11_HW6/homework/task1.html)
+- [Task #1: is midpoint?](https://aymkin.github.io/FL-11/FL11_HW6/homework/task1.html)
 
-* [Task #2: is triangle?](https://aymkin.github.io/FL-11/FL11_HW6/homework/task2.html)
+- [Task #2: is triangle?](https://aymkin.github.io/FL-11/FL11_HW6/homework/task2.html)
+
+[Group Task #1](https://aymkin.github.io/FL-11/FL11_04_GT1/index.html)
