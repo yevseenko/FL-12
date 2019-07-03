@@ -18,4 +18,4 @@ Homework #6
 
 - [Task #2: is triangle?](https://aymkin.github.io/FL-11/FL11_HW6/homework/task2.html)
 
-[Group Task #1](https://aymkin.github.io/FL-11/FL11_04_GT1/index.html)
+[Group Task #1](https://aymkin.github.io/FL-11/FL11_04_GT1/)
