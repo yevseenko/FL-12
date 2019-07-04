@@ -286,7 +286,7 @@ body {
 }
 .stair__ball {
   position: absolute;
-  bottom: 64px;
+  bottom: 60px;
   left: 0;
   width: 10px;
   height: 10px;
