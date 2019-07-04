@@ -457,7 +457,7 @@ body {
 }
 @keyframes bounce {
   0% {
-    top: 30px;
+    top: 35px;
     height: 5px;
     border-radius: 60px 60px 20px 20px;
     transform: scaleX(2);
